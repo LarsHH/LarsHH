@@ -1,0 +1,202 @@
+
+/* :root {
+    --dark-color: #3D405B;
+    --bright-color: #F4F1DE;
+    --other-color: #81B29A;
+} */
+/* :root {
+    --dark-color: #253237;
+    --bright-color: #9DB4C0;
+    --other-color: #5C6B73;
+} */
+:root {
+    --dark-color: #003459;
+    --bright-color: #FFFFFF;
+    --other-color: #00A8E8;
+}
+
+/* Global styles
+--------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+    color: #003459;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 30px;
+    line-height: 1;
+}
+h1, h2 {
+    /* font-family: 'Staatliches', cursive; */
+    /* font-family: 'Megrim', cursive; */
+    /* font-family: 'Audiowide', cursive; */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+}
+.item-details h3 {
+    margin-bottom: 0;
+}
+h3 + p {
+    font-style: italic;
+}
+p + a {
+    margin-top: 15px;
+}
+h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #003459;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* Profile section
+--------------------------------------*/
+header {
+    background-color: var(--dark-color);
+    color: var(--bright-color);
+}
+header img {
+    width: 150px;
+    margin-right: 80px;
+    border-radius: 50%;
+}
+
+/* Projects
+--------------------------------------*/
+.projects {
+    background-color: var(--bright-color);
+}
+.projects .btn {
+    background: #007EA7;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(0,126,167, 80%);
+}
+.project-item {
+    overflow: hidden;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+.project-item img {
+    border: 1px solid var(--dark-color);
+}
+/* Work experience
+--------------------------------------*/
+.work-experience {
+    background-color: var(--other-color);
+}
+
+
+/* Education
+--------------------------------------*/
+.education {
+    color: #FFFFFF;
+    background-image: url(../images/background-images/julian-zett-y8iR4t4MTF8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+}
+
+
+/* Contact info
+--------------------------------------*/
+footer {
+    background-color: var(--dark-color);
+    color: var(--bright-color);
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+    color: var(--bright-color);
+}
+.contact-list a:hover {
+    text-decoration: none;
+}
+.contact-list img {
+    width: 80px;
+}
+.content-wrap.contact-info {
+    padding: 45px 0 15px 0;
+}
+
+/* Responsive styles
+--------------------------------------*/
+@media screen and (min-width: 750px) {
+    header, footer {
+        /* text-align: center; */
+    }
+    header img {
+        float: right;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-info h2 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 60px;
+        line-height: 1.25
+    }
+    h2 {
+        line-height: 1;
+    }
+    header img {
+        display: block;
+        margin: 0 auto;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
