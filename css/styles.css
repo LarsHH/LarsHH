@@ -72,7 +72,7 @@ h3 ~ p {
     margin: 0;
 }
 .divider > section {
-    border-bottom: 1px dashed #003459;
+    border-bottom: 2px dashed #003459;
     padding: 25px 0;
 }
 .divider > section:last-of-type {
@@ -98,6 +98,7 @@ header img {
 }
 .projects .btn {
     background: #007EA7;
+    color: #fff;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
@@ -113,7 +114,16 @@ header img {
     margin-top: 0;
 }
 .project-item img {
-    border: 1px solid var(--dark-color);
+    border: 2px solid var(--dark-color);
+    padding: 1px;
+}
+.project-item .project-badge {
+    float:none;
+    padding: 0;
+    height: 20px;
+    width: auto;
+    border: none;
+    margin: 5px 5px 0 0;
 }
 /* Work experience
 --------------------------------------*/
