@@ -62,9 +62,7 @@ h1, h2 {
 .item-details h3 {
     margin-bottom: 0;
 }
-/* h3 + p {
-    font-style: italic;
-} */
+
 p + a {
     margin-top: 15px;
 }
